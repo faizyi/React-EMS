@@ -30,7 +30,7 @@ export default function Layout() {
           <div>
             <BrowserRouter basename='/React-EMS'>
               <Routes>
-                <Route path='/react-EMS' element={user ? <Home /> :  <Navigate to={'/login'}/>} />
+                <Route path='/React-EMS' element={user ? <Home /> :  <Navigate to={'/login'}/>} />
                 <Route path='/home' element={user ? <Home /> :  <Navigate to={'/login'}/>} />
                 <Route path='/signup' element={user ? <Navigate to={'/home'}/> : <Signup />} />
                 <Route path='/login' element={user ? <Navigate to={'/home'}/> : <Login />} />
