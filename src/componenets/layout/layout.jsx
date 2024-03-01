@@ -28,7 +28,7 @@ export default function Layout() {
       {
         loader ? <div className='layout-loader'><img src={loaderImg} alt="" /></div> :
           <div>
-            <BrowserRouter basename='/React-EMS'>
+            <BrowserRouter>
               <Routes>
                 <Route path='/React-EMS' element={user ? <Home /> :  <Navigate to={'/login'}/>} />
                 <Route path='/home' element={user ? <Home /> :  <Navigate to={'/login'}/>} />
