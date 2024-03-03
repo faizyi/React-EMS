@@ -15,7 +15,7 @@ export default function Login() {
         signInWithEmailAndPassword(auth, inputRef.current.value, passwordRef.current.value)
             .then((userCredential) => {
                 setLoader(false)
-                navigate('/home')
+                navigate('/React-EMS')
             })
             .catch((error) => {
                 Swal.fire("User not Found!");
